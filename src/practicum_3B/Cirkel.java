@@ -7,9 +7,9 @@ public class Cirkel {
     private int xPositie;
     private int yPositie;
 
-    public Cirkel(int radius, int xPositie, int yPositie) throws IllegalAccessException {
+    public Cirkel(int radius, int xPositie, int yPositie) throws IllegalArgumentException {
         if (radius < 1){
-            throw new IllegalAccessException("Radius moet groter dan 0 zijn!");
+            throw new IllegalArgumentException("Radius moet groter dan 0 zijn!");
         }
         this.radius = radius;
         this.xPositie = xPositie;

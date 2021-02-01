@@ -7,7 +7,7 @@ public class Main {
         try {
             c1 = new Cirkel(10, 0, 0);
             c2 = new Cirkel(0, 10, 10);
-        } catch (IllegalAccessException iae) {
+        } catch (IllegalArgumentException iae) {
             System.out.println(iae.getMessage());
         }
 
