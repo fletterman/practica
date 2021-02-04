@@ -18,7 +18,7 @@ public class Klas {
 
     public void wijzigCijfer(String naam, double nieuwCijfer){
         for (Leerling leerling : leerlingen){
-            if (leerling.getNaam() == naam){
+            if (leerling.getNaam().equals(naam)){
                 leerling.setCijfer(nieuwCijfer);
             }
         }
