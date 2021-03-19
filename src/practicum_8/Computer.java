@@ -17,8 +17,8 @@ public class Computer implements Goed{
     }
 
     @Override
-    public double huidigeWaarde() {
-        return Math.round((aanschafPrijs * Math.pow(0.6, Calendar.getInstance().get(Calendar.YEAR) - productieJaar)) * 100) / 100;
+    public String huidigeWaarde() {
+        return Utils.euroBedrag(aanschafPrijs * Math.pow(0.6, Calendar.getInstance().get(Calendar.YEAR) - productieJaar));
     }
 
     @Override

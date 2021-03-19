@@ -12,8 +12,8 @@ public class Fiets extends Voertuig {
     }
 
     @Override
-    public double huidigeWaarde() {
-        return Math.round((nieuwPrijs * Math.pow(0.9, Calendar.getInstance().get(Calendar.YEAR) - bouwjaar)) * 100) / 100;
+    public String huidigeWaarde() {
+        return Utils.euroBedrag(nieuwPrijs * Math.pow(0.9, Calendar.getInstance().get(Calendar.YEAR) - bouwjaar));
     }
 
     @Override

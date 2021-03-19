@@ -20,11 +20,12 @@ public class BedrijfsInventaris {
                 return;
             }
         }
-        if (g.huidigeWaarde() > budget){
+        System.out.println(g.huidigeWaarde());
+        if (Integer.parseInt(g.huidigeWaarde()) > budget){
             return;
         }
         alleGoederen.add(g);
-        budget -= g.huidigeWaarde();
+        budget -= Integer.parseInt(g.huidigeWaarde());
         return;
     }
 
