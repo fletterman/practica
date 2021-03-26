@@ -56,10 +56,10 @@ public class Persoon {
     }
 
     public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> games){
-        for (Game game : mijnGames){
-            for (Game game1 : games){
-                if (game.getNaam() == game1.getNaam()){
-                    games.remove(game1);
+        for (Game mijnGame : mijnGames){
+            for (Game game : games){
+                if (mijnGame.getNaam() == game.getNaam()){
+                    games.remove(game);
                 }
             }
         }
