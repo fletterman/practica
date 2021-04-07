@@ -12,7 +12,12 @@ public class Klant {
     }
 
     public void setKorting(double korting){
-        this.kortingsPercentage = korting;
+        if (korting < 0){
+            this.kortingsPercentage = 0;
+        }
+        else {
+            this.kortingsPercentage = korting;
+        }
     }
 
     public double getKortingsPercentage(){

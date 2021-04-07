@@ -14,7 +14,12 @@ public class AutoHuur {
     }
 
     public void setAantalDagen(int aantalDagen) {
-        this.aantalDagen = aantalDagen;
+        if (aantalDagen < 0){
+            this.aantalDagen = 0;
+        }
+        else {
+            this.aantalDagen = aantalDagen;
+        }
     }
 
     public Klant getHuurder() {

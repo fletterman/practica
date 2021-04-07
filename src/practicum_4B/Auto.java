@@ -8,11 +8,21 @@ public class Auto {
 
     public Auto(String type, double prijsPerDag) {
         this.type = type;
-        this.prijsPerDag = prijsPerDag;
+        if (prijsPerDag < 0){
+            this.prijsPerDag = 0;
+        }
+        else {
+            this.prijsPerDag = prijsPerDag;
+        }
     }
 
     public void setPrijsPerDag(double prijsPerDag) {
-        this.prijsPerDag = prijsPerDag;
+        if (prijsPerDag < 0){
+            this.prijsPerDag = 0;
+        }
+        else {
+            this.prijsPerDag = prijsPerDag;
+        }
     }
 
     public double getPrijsPerDag() {
